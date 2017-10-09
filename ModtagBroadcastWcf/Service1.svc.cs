@@ -25,7 +25,8 @@ namespace ModtagBroadcastWcf
                 databaseConnection.Open();
                 using(SqlCommand selectCommand = new SqlCommand(selectAllTemps, databaseConnection))
                 {
-                    using(SqlDataReader reader = selectCommand.ExecuteReader())
+                    using (SqlDataReader reader = selectCommand.ExecuteReader())
+
                     {
                         List<Temperatur> tempList = new List<Temperatur>();
                         while (reader.Read())
