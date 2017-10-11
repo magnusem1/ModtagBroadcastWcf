@@ -15,5 +15,6 @@ namespace ModtagBroadcastWcf
         [DataMember]
         public int Id;
 
+
     }
 }

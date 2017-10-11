@@ -49,7 +49,7 @@ namespace ModtagBroadcastWcf
 
         public int PostTempToList(string temp)
         {
-            const string postTemp = "insert INTO Temps (Temp) value (@temp)";
+            const string postTemp = "insert into Temps (Temp) values (@temp)";
             using (SqlConnection databaseConnection = new SqlConnection(ConnectionString))
             {
                 databaseConnection.Open();
